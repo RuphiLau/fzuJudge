@@ -180,7 +180,7 @@ $(".popWindow #confirm").click(function() {
 				}
 			},
 			beforeSend: function() {
-				$("#list span:eq("+curIndex+")");
+				$("#list span:eq("+curIndex+")").text("正在评议中，请稍等...");
 				$(".popWindow").hide();
 			}
 		});
